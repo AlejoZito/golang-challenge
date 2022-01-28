@@ -25,7 +25,7 @@ func findMissingPosition(arrayToSort []int) (foundValues []bool) {
 
 	for i := 0; i < len(arrayToSort); i++ {
 		valueFound := arrayToSort[i]
-		foundValues[valueFound-1] = true
+		foundValues[valueFound-1] = true //inserting the value found instead of "true" would give us a sorted array
 	}
 
 	return foundValues
